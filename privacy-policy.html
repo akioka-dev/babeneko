@@ -12,7 +12,7 @@
   <div class="top-nav"><a href="index.html">&larr; トップに戻る / Back to top</a></div>
 
   <h1>バベ猫の塔<span class="sub">プライバシーポリシー / Privacy Policy</span></h1>
-  <div class="updated">最終更新日 / Last updated: 2026-09-06</div>
+  <div class="updated">最終更新日 / Last updated: 2026-09-09</div>
 
   <div class="lang-nav">
     <a href="#ja">日本語</a>
@@ -27,7 +27,7 @@
 
     <p>
       本プライバシーポリシーは、aki（以下「運営者」）が提供するゲーム
-      「バベ猫の塔」（ブラウザ版・iOS版・Android版・Steam版を含む。以下「本ゲーム」）における、
+      「バベ猫の塔」（ブラウザ版・iOS版・Android版・Steam版、および体験版を含む。以下「本ゲーム」）における、
       利用者情報の取り扱いについて定めるものです。
     </p>
 
@@ -37,18 +37,23 @@
       <tbody>
         <tr>
           <td>セーブデータ（クラウドセーブ）</td>
-          <td>ゲームの進行状況を復元するための保存データ。各プラットフォームのクラウド保存機能（iCloud／Google Play Games／Steam Cloud等）を通じて保存されます。</td>
+          <td>ゲームの進行状況を復元するための保存データ。各プラットフォームのクラウド保存機能（iOS：Game Center〔iCloud 上に保存されます〕／Android：Google Play Games／Steam：Steam Cloud）を通じて、利用者ご自身のクラウド領域に保存されます。運営者はその内容にアクセスできません。</td>
           <td>iOS・Android・Steam</td>
         </tr>
         <tr>
-          <td>Steam実績・Steamアカウント識別子</td>
-          <td>Steam実績の達成状況を記録するため、SteamのプレイヤーID（SteamID）と紐づけて実績データを送受信します。</td>
+          <td>Steam実績の解除状況</td>
+          <td>実績の解除判定は端末内で行い、Steamへは解除された実績のIDのみを通知します。本ゲームはSteamのプレイヤーID（SteamID）を取得・保持しません（実績と利用者アカウントの紐づけはSteamクライアント側で行われます）。</td>
           <td>Steam</td>
         </tr>
         <tr>
           <td>クラッシュ・エラー情報</td>
-          <td>不具合発生時の原因調査のため、エラー発生時のスタックトレース、発生時のアプリバージョン、端末の機種名・OSバージョン等の技術情報を、クラッシュ解析サービス（Sentry）を通じて収集します。プレイヤー名・セーブデータ本体は送信前に除去されます。</td>
-          <td>ブラウザ版・Android</td>
+          <td>不具合発生時の原因調査のため、エラー発生時のスタックトレース、発生時のアプリバージョン、端末の機種名・OSバージョン等の技術情報、および直近の操作履歴（操作した画面・要素の記録。入力された文字列は含みません）を、クラッシュ解析サービス（Sentry）を通じて収集します。セーブデータ本体は送信前に除去されます。本ゲームには氏名やプレイヤー名を入力する欄がなく、これらを収集することはありません。</td>
+          <td>全プラットフォーム</td>
+        </tr>
+        <tr>
+          <td>セーブデータの書き出し（エクスポート）</td>
+          <td>利用者が「セーブデータの書き出し」を操作した場合にのみ、セーブデータをテキストファイルとして出力し、OSの共有機能へ渡します。保存先・送信先は利用者ご自身が選択するもので、運営者はその宛先を指定も取得もしません。</td>
+          <td>全プラットフォーム</td>
         </tr>
         <tr>
           <td>お問い合わせ内容（メールアドレスは任意）</td>
@@ -60,6 +65,7 @@
 
     <p>
       本ゲームは、Google Analytics・広告SDK等の第三者製アクセス解析ツール・広告配信ツールを一切導入していません。
+      広告ID・デバイス識別子・位置情報の取得や、利用者を追跡する目的でのデータ利用も行いません。
       上記以外の目的で個人情報を収集することはありません。
     </p>
 
@@ -71,39 +77,107 @@
       <li>お問い合わせへの対応のため（返信を希望された場合のメールアドレスの利用を含む）</li>
     </ul>
 
-    <h3>3. 第三者提供・委託</h3>
+    <h3>3. 通知について</h3>
+    <p>
+      本ゲームは、端末内でスケジュールして発火する「ローカル通知」のみを使用します。
+      通知の内容は端末内で生成され、運営者のサーバーや外部サービスを経由しません。
+      リモートプッシュ通知の仕組みは持たず、通知のために利用者情報を収集することもありません。
+      通知の送信には、初回起動時またはオプション画面でのOSの許可が必要で、許可の取り消しはいつでも端末の設定から行えます。
+    </p>
+
+    <h3>4. 処理の法的根拠（EEA・英国の利用者向け）</h3>
+    <table>
+      <thead><tr><th>処理</th><th>法的根拠（GDPR 第6条1項）</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>クラッシュ・エラー情報の収集</td>
+          <td>正当な利益（(f)号）— 本ゲームの安定した動作を維持し、不具合を修正するため。個人を識別する情報を含まない形で処理します</td>
+        </tr>
+        <tr>
+          <td>クラウドセーブ・実績・ローカル通知</td>
+          <td>契約の履行（(b)号）— 利用者が有効化した機能を提供するため</td>
+        </tr>
+        <tr>
+          <td>お問い合わせへの対応</td>
+          <td>同意（(a)号）— 利用者ご自身がフォームから送信された場合に限り処理します</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      クラッシュ・エラー情報の解析には米国のSentryを利用しており、これらの情報は米国内で処理されます。
+      EEA・英国からの移転にあたっては、同社との契約に基づく標準契約条項（SCC）等の適法な移転の仕組みによります。
+    </p>
+
+    <h3>5. 第三者提供・委託</h3>
     <p>
       上記の情報は、各機能の実現に必要な範囲で以下のサービス提供事業者に送信されます。
       各社のプライバシーポリシーも併せてご確認ください。
     </p>
     <ul>
-      <li>Apple Inc.（iCloud／iOS関連機能）</li>
+      <li>Apple Inc.（Game Center／iOS関連機能）</li>
       <li>Google LLC（Google Play Games／Android関連機能、およびGoogleフォームによるお問い合わせ受付）</li>
       <li>Valve Corporation（Steamクラウドセーブ・Steam実績）</li>
       <li>Sentry（クラッシュ・エラー情報の解析）</li>
     </ul>
     <p>これら以外の第三者への情報提供は行いません（法令に基づく場合を除く）。</p>
 
-    <h3>4. ローカルに保存される情報</h3>
+    <h3>6. 端末内に保存される情報</h3>
     <p>
       本ゲームは、ブラウザのローカルストレージや端末内ストレージにゲームの設定・進行状況を保存します。
-      これらの情報は運営者のサーバーへ送信されることはなく、利用者の端末内にのみ保存されます
-      （クラウドセーブを有効にした場合を除く）。
+      これらの情報は、運営者のサーバーへ送信されることはありません（運営者は本ゲームのためのサーバーを保有していません）。
+      クラウドセーブを有効にした場合も、保存先は前記のとおり利用者ご自身のプラットフォームのクラウド領域であり、
+      運営者がその内容を取得・保管することはありません。
     </p>
 
-    <h3>5. 情報の保存期間</h3>
+    <h3>7. 情報の保存期間</h3>
+    <ul>
+      <li>クラウドセーブデータ：各プラットフォームのクラウドサービスの仕様に従って保存されます（削除方法は「8. 利用者の権利と削除の方法」をご覧ください）</li>
+      <li>クラッシュ・エラー情報：Sentryにおいて90日間保持されたのち、自動的に削除されます</li>
+      <li>お問い合わせ内容（任意記入のメールアドレスを含む）：対応の完了から1年が経過した時点で削除します</li>
+    </ul>
+
+    <h3>8. 利用者の権利と削除の方法</h3>
     <p>
-      クラウドセーブデータは、各プラットフォームのクラウドサービスの仕様に従って保存されます。
-      クラッシュ・エラー情報は、Sentryのデータ保持ポリシーに従い一定期間後に削除されます。
+      利用者は、ご自身の情報について、開示・訂正・削除・利用の制限・処理への異議申立てを求める権利を有します（お住まいの地域の法令により内容は異なります）。
+      お問い合わせフォームからご連絡ください。原則として1か月以内に対応します。
+    </p>
+    <table>
+      <thead><tr><th>データ</th><th>削除の方法</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>端末内のセーブデータ・設定</td>
+          <td>アプリのデータ削除またはアンインストール（ブラウザ版はブラウザのサイトデータ削除）により、利用者ご自身で削除できます</td>
+        </tr>
+        <tr>
+          <td>クラウドセーブデータ</td>
+          <td>各プラットフォームの機能（Google Play Gamesのゲームデータ削除、Game Center、Steam Cloud）により、利用者ご自身で削除できます。運営者は他の利用者のクラウド領域にアクセスする手段を持ちません</td>
+        </tr>
+        <tr>
+          <td>クラッシュ・エラー情報</td>
+          <td>個人を識別する情報を含まないため、通常は特定の利用者の記録として抽出できません。発生日時・端末情報等から該当の記録を特定できる場合には、当該記録を削除します</td>
+        </tr>
+        <tr>
+          <td>お問い合わせ内容</td>
+          <td>お問い合わせフォームからご連絡いただければ、運営者が該当の記録を削除します</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      EEA・英国にお住まいの方は、お住まいの国のデータ保護監督機関へ苦情を申し立てる権利も有します。
     </p>
 
-    <h3>6. お問い合わせ</h3>
+    <h3>9. お子様の利用について</h3>
     <p>
-      本ポリシーに関するお問い合わせは、以下のフォームよりご連絡ください。<br>
+      本ゲームは13歳未満の方を主な対象としておらず、13歳未満の方から意図的に個人情報を収集することはありません。
+    </p>
+
+    <h3>10. お問い合わせ</h3>
+    <p>
+      本ポリシーに関するお問い合わせ、および前記の権利の行使は、以下のフォームよりご連絡ください。<br>
       <a class="link" href="https://forms.gle/d9vEk1T55JtK72mH7">お問い合わせフォーム</a>
     </p>
 
-    <h3>7. ポリシーの変更</h3>
+    <h3>11. ポリシーの変更</h3>
     <p>
       本ポリシーの内容は、法令の変更やサービス内容の変更に伴い、予告なく改定することがあります。
       改定後のポリシーは本ページに掲載した時点から効力を生じるものとします。
@@ -121,7 +195,7 @@
     <p>
       This Privacy Policy describes how aki ("we", "the Developer")
       handles user information in connection with the game "Babel Cat's Tower", available on
-      Browser, iOS, Android, and Steam (the "Game").
+      Browser, iOS, Android, and Steam, including the free demo version (the "Game").
     </p>
 
     <h3>1. Information We Collect</h3>
@@ -130,18 +204,23 @@
       <tbody>
         <tr>
           <td>Save data (cloud save)</td>
-          <td>Game progress data used to restore your save. Stored via each platform's cloud save service (iCloud / Google Play Games / Steam Cloud, etc.).</td>
+          <td>Game progress data used to restore your save. Stored in your own cloud storage through each platform's save service (iOS: Game Center, which stores the data in iCloud; Android: Google Play Games; Steam: Steam Cloud). The Developer cannot access its contents.</td>
           <td>iOS, Android, Steam</td>
         </tr>
         <tr>
-          <td>Steam achievements &amp; Steam account identifier</td>
-          <td>Achievement progress is sent and received in association with your Steam player ID (SteamID) to provide the Steam achievements feature.</td>
+          <td>Steam achievement unlocks</td>
+          <td>Achievements are evaluated on your device, and only the ID of an unlocked achievement is passed to Steam. The Game does not obtain or store your Steam player ID (SteamID); the association between an achievement and your account is made by the Steam client.</td>
           <td>Steam</td>
         </tr>
         <tr>
           <td>Crash &amp; error information</td>
-          <td>To investigate bugs, we collect technical information such as stack traces, the app version at the time of the error, and device model / OS version, via a crash-reporting service (Sentry). Player names and save data content are stripped before transmission.</td>
-          <td>Browser, Android</td>
+          <td>To investigate bugs, we collect technical information such as stack traces, the app version at the time of the error, device model / OS version, and a short trail of recent interactions (which screens and elements were used; it does not include any text you typed), via a crash-reporting service (Sentry). Save data content is stripped before transmission. The Game has no field for entering a real name or player name, and we never collect one.</td>
+          <td>All platforms</td>
+        </tr>
+        <tr>
+          <td>Save data export</td>
+          <td>Only when you choose to export your save, the Game writes it to a text file and hands it to your operating system's share function. You choose the destination; the Developer neither specifies nor learns it.</td>
+          <td>All platforms</td>
         </tr>
         <tr>
           <td>Inquiry content (email address optional)</td>
@@ -153,6 +232,7 @@
 
     <p>
       The Game does not use any third-party analytics or advertising SDKs (e.g. Google Analytics, ad networks).
+      It does not collect advertising IDs, device identifiers, or location data, and it does not use any data for tracking purposes.
       We do not collect personal information for any purpose other than those listed above.
     </p>
 
@@ -164,39 +244,108 @@
       <li>To respond to inquiries (including using your email address if you request a reply)</li>
     </ul>
 
-    <h3>3. Third-Party Disclosure / Service Providers</h3>
+    <h3>3. Notifications</h3>
+    <p>
+      The Game uses local notifications only: they are scheduled and fired on your device.
+      Their content is generated on the device and never passes through the Developer's servers or any external service.
+      There is no remote push mechanism, and no user information is collected in order to deliver notifications.
+      Notifications require your permission at first launch or from the options screen, and you can revoke that permission at any time in your device settings.
+    </p>
+
+    <h3>4. Legal Bases for Processing (for users in the EEA and the UK)</h3>
+    <table>
+      <thead><tr><th>Processing</th><th>Legal basis (GDPR Art. 6(1))</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Collection of crash &amp; error information</td>
+          <td>Legitimate interests (point (f)) — to keep the Game running reliably and to fix defects. The data is processed in a form that does not identify individual users</td>
+        </tr>
+        <tr>
+          <td>Cloud save, achievements, local notifications</td>
+          <td>Performance of a contract (point (b)) — to provide the features you have enabled</td>
+        </tr>
+        <tr>
+          <td>Responding to inquiries</td>
+          <td>Consent (point (a)) — processed only when you submit the form yourself</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Crash and error information is analysed by Sentry in the United States and is therefore processed there.
+      Transfers from the EEA and the UK are made under an appropriate transfer mechanism, such as the Standard Contractual Clauses agreed with that provider.
+    </p>
+
+    <h3>5. Third-Party Disclosure / Service Providers</h3>
     <p>
       The information above is shared with the following service providers only to the extent necessary
       to provide each feature. Please also review each provider's own privacy policy.
     </p>
     <ul>
-      <li>Apple Inc. (iCloud / iOS-related features)</li>
+      <li>Apple Inc. (Game Center / iOS-related features)</li>
       <li>Google LLC (Google Play Games / Android-related features, and Google Forms for handling inquiries)</li>
       <li>Valve Corporation (Steam Cloud save, Steam achievements)</li>
       <li>Sentry (crash / error analysis)</li>
     </ul>
     <p>We do not disclose information to any other third party, except where required by law.</p>
 
-    <h3>4. Locally Stored Information</h3>
+    <h3>6. Information Stored on Your Device</h3>
     <p>
       The Game stores settings and progress data in your browser's local storage or on-device storage.
-      This information is never transmitted to our servers and remains on your device only
-      (except when cloud save is enabled).
+      This information is never transmitted to the Developer's servers (we do not operate any server for the Game).
+      When cloud save is enabled, the data is stored in your own platform cloud storage as described above;
+      the Developer does not receive or retain a copy.
     </p>
 
-    <h3>5. Retention Period</h3>
+    <h3>7. Retention Period</h3>
+    <ul>
+      <li>Cloud save data: retained according to each platform's cloud service policy (see "8. Your Rights and How to Delete Your Data" for how to delete it)</li>
+      <li>Crash &amp; error information: retained by Sentry for 90 days and then deleted automatically</li>
+      <li>Inquiry content (including any optional email address): deleted one year after the inquiry has been handled</li>
+    </ul>
+
+    <h3>8. Your Rights and How to Delete Your Data</h3>
     <p>
-      Cloud save data is retained according to each platform's cloud service policy.
-      Crash/error information is deleted after a certain period in accordance with Sentry's data retention policy.
+      You have the right to request access to, correction of, deletion of, or restriction of the processing of your information,
+      and to object to processing (the exact rights depend on where you live).
+      Please contact us through the form below; we respond within one month as a rule.
+    </p>
+    <table>
+      <thead><tr><th>Data</th><th>How it is deleted</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>On-device save data and settings</td>
+          <td>You can delete it yourself by clearing the app's data or uninstalling the app (in the browser version, by clearing site data)</td>
+        </tr>
+        <tr>
+          <td>Cloud save data</td>
+          <td>You can delete it yourself through each platform (Google Play Games "delete game data", Game Center, Steam Cloud). The Developer has no means of accessing another user's cloud storage</td>
+        </tr>
+        <tr>
+          <td>Crash &amp; error information</td>
+          <td>Because it contains no identifying information, it usually cannot be traced back to an individual user. Where a record can be identified from the time of the error and device information, we delete that record</td>
+        </tr>
+        <tr>
+          <td>Inquiry content</td>
+          <td>Contact us through the form and we will delete the corresponding record</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      If you are in the EEA or the UK, you also have the right to lodge a complaint with your local data protection supervisory authority.
     </p>
 
-    <h3>6. Contact</h3>
+    <h3>9. Children</h3>
     <p>
-      For inquiries regarding this policy, please use the form below.<br>
+      The Game is not primarily directed to children under 13, and we do not knowingly collect personal information from them.
+    </p>
+
+    <h3>10. Contact</h3>
+    <p>
+      For inquiries regarding this policy, or to exercise any of the rights above, please use the form below.<br>
       <a class="link" href="https://forms.gle/d9vEk1T55JtK72mH7">Contact Form</a>
     </p>
 
-    <h3>7. Changes to This Policy</h3>
+    <h3>11. Changes to This Policy</h3>
     <p>
       This policy may be revised without prior notice due to changes in applicable law or the Game's
       features. The revised policy takes effect from the moment it is published on this page.
