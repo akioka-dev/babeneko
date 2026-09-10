@@ -1,10 +1,11 @@
-# babeneko-legal
+# babeneko
 
 「バベ猫の塔」の公式ページ（ストアリンク・プライバシーポリシー・利用規約・バグ報告窓口）を
 GitHub Pages でホストするリポジトリです。
 
 - 公開URL: https://akioka-dev.github.io/babeneko/
 - ゲーム内（OptionsScene・初回起動同意画面）から本ページへのリンクを掲載しています
+- 本ディレクトリ（本リポジトリの `website/`）が正本。`npm run website:publish` で公開先リポジトリへ反映する（→ [scripts/CLAUDE.md](../scripts/CLAUDE.md)）
 
 ## ファイル構成
 

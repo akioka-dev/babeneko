@@ -12,7 +12,7 @@
   <div class="top-nav"><a href="index.html">&larr; トップに戻る / Back to top</a></div>
 
   <h1>バベ猫の塔<span class="sub">プライバシーポリシー / Privacy Policy</span></h1>
-  <div class="updated">最終更新日 / Last updated: 2026-09-09</div>
+  <div class="updated">最終更新日 / Last updated: 2026-09-10</div>
 
   <div class="lang-nav">
     <a href="#ja">日本語</a>
@@ -47,7 +47,7 @@
         </tr>
         <tr>
           <td>クラッシュ・エラー情報</td>
-          <td>不具合発生時の原因調査のため、エラー発生時のスタックトレース、発生時のアプリバージョン、端末の機種名・OSバージョン等の技術情報、および直近の操作履歴（操作した画面・要素の記録。入力された文字列は含みません）を、クラッシュ解析サービス（Sentry）を通じて収集します。セーブデータ本体は送信前に除去されます。本ゲームには氏名やプレイヤー名を入力する欄がなく、これらを収集することはありません。</td>
+          <td>不具合発生時の原因調査のため、エラー発生時のスタックトレース、発生時のアプリバージョン、端末の機種名・OSバージョン等の技術情報、および直近の操作履歴（操作した画面・要素の記録。入力された文字列は含みません）を、クラッシュ解析サービス（Sentry）を通じて収集します。セーブデータ本体は送信前に除去されます。本ゲームには氏名やプレイヤー名を入力する欄がなく、これらを収集することはありません。あわせて、クラッシュ解析サービスが端末上で生成する<strong>当該インストール固有のランダムな識別子</strong>（同一端末からの記録をまとめるためのもの）が付与されます。この識別子は氏名・メールアドレス・アカウント・広告IDと結びつかず、他のサービスと突き合わせることもできません。アプリを削除すると失われます。</td>
           <td>全プラットフォーム</td>
         </tr>
         <tr>
@@ -65,7 +65,8 @@
 
     <p>
       本ゲームは、Google Analytics・広告SDK等の第三者製アクセス解析ツール・広告配信ツールを一切導入していません。
-      広告ID・デバイス識別子・位置情報の取得や、利用者を追跡する目的でのデータ利用も行いません。
+      広告ID・OSが提供する端末識別子（IDFA／IDFV等）・位置情報の取得は行いません。
+      上記のクラッシュ解析用の識別子を除き、利用者を追跡する目的でのデータ利用も行いません。
       上記以外の目的で個人情報を収集することはありません。
     </p>
 
@@ -154,7 +155,7 @@
         </tr>
         <tr>
           <td>クラッシュ・エラー情報</td>
-          <td>個人を識別する情報を含まないため、通常は特定の利用者の記録として抽出できません。発生日時・端末情報等から該当の記録を特定できる場合には、当該記録を削除します</td>
+          <td>記録には前記のインストール識別子が付きますが、利用者ご自身がその値を確認する手段がないため、通常は特定の利用者の記録として抽出できません。発生日時・端末情報等から該当の記録を特定できる場合には、当該記録を削除します（いずれの記録も90日で自動的に削除されます）</td>
         </tr>
         <tr>
           <td>お問い合わせ内容</td>
@@ -214,7 +215,7 @@
         </tr>
         <tr>
           <td>Crash &amp; error information</td>
-          <td>To investigate bugs, we collect technical information such as stack traces, the app version at the time of the error, device model / OS version, and a short trail of recent interactions (which screens and elements were used; it does not include any text you typed), via a crash-reporting service (Sentry). Save data content is stripped before transmission. The Game has no field for entering a real name or player name, and we never collect one.</td>
+          <td>To investigate bugs, we collect technical information such as stack traces, the app version at the time of the error, device model / OS version, and a short trail of recent interactions (which screens and elements were used; it does not include any text you typed), via a crash-reporting service (Sentry). Save data content is stripped before transmission. The Game has no field for entering a real name or player name, and we never collect one. The crash-reporting service also attaches a <strong>random identifier unique to your installation of the Game</strong>, used to group records coming from the same device. It is not linked to a name, email address, account, or advertising ID, cannot be matched against other services, and is lost when you delete the app.</td>
           <td>All platforms</td>
         </tr>
         <tr>
@@ -232,7 +233,8 @@
 
     <p>
       The Game does not use any third-party analytics or advertising SDKs (e.g. Google Analytics, ad networks).
-      It does not collect advertising IDs, device identifiers, or location data, and it does not use any data for tracking purposes.
+      It does not collect advertising IDs, OS-level device identifiers (such as IDFA/IDFV), or location data.
+      Apart from the crash-reporting identifier described above, it does not use any data for tracking purposes.
       We do not collect personal information for any purpose other than those listed above.
     </p>
 
@@ -322,7 +324,7 @@
         </tr>
         <tr>
           <td>Crash &amp; error information</td>
-          <td>Because it contains no identifying information, it usually cannot be traced back to an individual user. Where a record can be identified from the time of the error and device information, we delete that record</td>
+          <td>Records carry the installation identifier described above, but you have no way to see its value, so a record usually cannot be traced back to an individual user. Where a record can be identified from the time of the error and device information, we delete that record (all records are deleted automatically after 90 days)</td>
         </tr>
         <tr>
           <td>Inquiry content</td>
