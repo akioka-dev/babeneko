@@ -47,7 +47,7 @@
         </tr>
         <tr>
           <td>クラッシュ・エラー情報</td>
-          <td>不具合発生時の原因調査のため、エラー発生時のスタックトレース、発生時のアプリバージョン、端末の機種名・OSバージョン等の技術情報、および直近の操作履歴（操作した画面・要素の記録。入力された文字列は含みません）を、クラッシュ解析サービス（Sentry）を通じて収集します。セーブデータ本体は送信前に除去されます。本ゲームには氏名やプレイヤー名を入力する欄がなく、これらを収集することはありません。あわせて、クラッシュ解析サービスが端末上で生成する<strong>当該インストール固有のランダムな識別子</strong>（同一端末からの記録をまとめるためのもの）が付与されます。この識別子は氏名・メールアドレス・アカウント・広告IDと結びつかず、他のサービスと突き合わせることもできません。アプリを削除すると失われます。</td>
+          <td>不具合発生時の原因調査のため、エラー発生時のスタックトレース、発生時のアプリバージョン、端末の機種名・OSバージョン等の技術情報、および直近の操作履歴（操作した画面・要素の記録。入力された文字列は含みません）を、クラッシュ解析サービス（Sentry）を通じて収集します。セーブデータ本体は送信前に除去されます。本ゲームには氏名やプレイヤー名を入力する欄がなく、これらを収集することはありません。送信はエラー発生時に限られ、端末やインストールを識別する識別子、およびIPアドレスは記録しません。</td>
           <td>全プラットフォーム</td>
         </tr>
         <tr>
@@ -65,8 +65,8 @@
 
     <p>
       本ゲームは、Google Analytics・広告SDK等の第三者製アクセス解析ツール・広告配信ツールを一切導入していません。
-      広告ID・OSが提供する端末識別子（IDFA／IDFV等）・位置情報の取得は行いません。
-      上記のクラッシュ解析用の識別子を除き、利用者を追跡する目的でのデータ利用も行いません。
+      広告ID・端末識別子（IDFA／IDFV等のOSが提供するものを含む）・位置情報の取得は行いません。
+      利用者を追跡する目的でのデータ利用も行いません。
       上記以外の目的で個人情報を収集することはありません。
     </p>
 
@@ -105,8 +105,7 @@
       </tbody>
     </table>
     <p>
-      クラッシュ・エラー情報の解析には米国のSentryを利用しており、これらの情報は米国内で処理されます。
-      EEA・英国からの移転にあたっては、同社との契約に基づく標準契約条項（SCC）等の適法な移転の仕組みによります。
+      EEA・英国から日本国外（米国等。→ 5. 第三者提供・委託）への移転にあたっては、各事業者との契約に基づく標準契約条項（SCC）等の適法な移転の仕組みによります。
     </p>
 
     <h3>5. 第三者提供・委託</h3>
@@ -120,6 +119,10 @@
       <li>Valve Corporation（Steamクラウドセーブ・Steam実績）</li>
       <li>Sentry（クラッシュ・エラー情報の解析）</li>
     </ul>
+    <p>
+      これらの事業者はいずれも米国の事業者であり、上記の情報は米国をはじめとする日本国外で処理・保存されます。
+      このうちクラッシュ・エラー情報（Sentry）とバグ報告・ご意見の内容（Googleフォーム）は、運営者の依頼に基づき米国で処理されます。
+    </p>
     <p>これら以外の第三者への情報提供は行いません（法令に基づく場合を除く）。</p>
 
     <h3>6. 端末内に保存される情報</h3>
@@ -156,7 +159,7 @@
         </tr>
         <tr>
           <td>クラッシュ・エラー情報</td>
-          <td>記録には前記のインストール識別子が付きますが、利用者ご自身がその値を確認する手段がないため、通常は特定の利用者の記録として抽出できません。発生日時・端末情報等から該当の記録を特定できる場合には、当該記録を削除します（いずれの記録も90日で自動的に削除されます）</td>
+          <td>記録には端末・インストールの識別子やIPアドレスが含まれないため、通常は特定の利用者の記録として抽出できません。発生日時・端末情報等から該当の記録を特定できる場合には、当該記録を削除します（いずれの記録も90日で自動的に削除されます）</td>
         </tr>
         <tr>
           <td>バグ報告・ご意見の内容</td>
@@ -223,7 +226,7 @@
         </tr>
         <tr>
           <td>Crash &amp; error information</td>
-          <td>To investigate bugs, we collect technical information such as stack traces, the app version at the time of the error, device model / OS version, and a short trail of recent interactions (which screens and elements were used; it does not include any text you typed), via a crash-reporting service (Sentry). Save data content is stripped before transmission. The Game has no field for entering a real name or player name, and we never collect one. The crash-reporting service also attaches a <strong>random identifier unique to your installation of the Game</strong>, used to group records coming from the same device. It is not linked to a name, email address, account, or advertising ID, cannot be matched against other services, and is lost when you delete the app.</td>
+          <td>To investigate bugs, we collect technical information such as stack traces, the app version at the time of the error, device model / OS version, and a short trail of recent interactions (which screens and elements were used; it does not include any text you typed), via a crash-reporting service (Sentry). Save data content is stripped before transmission. The Game has no field for entering a real name or player name, and we never collect one. Information is sent only when an error occurs, and no identifier for your device or installation, nor your IP address, is recorded.</td>
           <td>All platforms</td>
         </tr>
         <tr>
@@ -241,8 +244,8 @@
 
     <p>
       The Game does not use any third-party analytics or advertising SDKs (e.g. Google Analytics, ad networks).
-      It does not collect advertising IDs, OS-level device identifiers (such as IDFA/IDFV), or location data.
-      Apart from the crash-reporting identifier described above, it does not use any data for tracking purposes.
+      It does not collect advertising IDs, device identifiers (including OS-level ones such as IDFA/IDFV), or location data.
+      It does not use any data for tracking purposes.
       We do not collect personal information for any purpose other than those listed above.
     </p>
 
@@ -281,8 +284,7 @@
       </tbody>
     </table>
     <p>
-      Crash and error information is analysed by Sentry in the United States and is therefore processed there.
-      Transfers from the EEA and the UK are made under an appropriate transfer mechanism, such as the Standard Contractual Clauses agreed with that provider.
+      Transfers from the EEA and the UK to countries outside Japan (such as the United States; see 5. Third-Party Disclosure / Service Providers) are made under an appropriate transfer mechanism, such as the Standard Contractual Clauses agreed with each provider.
     </p>
 
     <h3>5. Third-Party Disclosure / Service Providers</h3>
@@ -296,6 +298,10 @@
       <li>Valve Corporation (Steam Cloud save, Steam achievements)</li>
       <li>Sentry (crash / error analysis)</li>
     </ul>
+    <p>
+      All of these providers are based in the United States, and the information above is processed and stored outside Japan, including in the United States.
+      In particular, crash and error information (Sentry) and bug reports and feedback (Google Forms) are processed in the United States on the Developer's behalf.
+    </p>
     <p>We do not disclose information to any other third party, except where required by law.</p>
 
     <h3>6. Information Stored on Your Device</h3>
@@ -333,7 +339,7 @@
         </tr>
         <tr>
           <td>Crash &amp; error information</td>
-          <td>Records carry the installation identifier described above, but you have no way to see its value, so a record usually cannot be traced back to an individual user. Where a record can be identified from the time of the error and device information, we delete that record (all records are deleted automatically after 90 days)</td>
+          <td>Records contain no device or installation identifier and no IP address, so a record usually cannot be traced back to an individual user. Where a record can be identified from the time of the error and device information, we delete that record (all records are deleted automatically after 90 days)</td>
         </tr>
         <tr>
           <td>Bug reports and feedback</td>
