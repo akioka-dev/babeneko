@@ -23,6 +23,10 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   line-height: 1.8;
 }
+/* 簡体字の節は日本語フォントの字形にならないよう、中国大陸向けのフォントを先に置く */
+:lang(zh-Hans) {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
 .wrap {
   max-width: 840px;
   margin: 0 auto;
