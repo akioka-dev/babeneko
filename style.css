@@ -27,6 +27,10 @@ body {
 :lang(zh-Hans) {
   font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
+/* 繁体字の節も同じ理由で、台湾向けのフォントを先に置く */
+:lang(zh-Hant) {
+  font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
 .wrap {
   max-width: 840px;
   margin: 0 auto;
