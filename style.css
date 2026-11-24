@@ -31,6 +31,11 @@ body {
 :lang(zh-Hant) {
   font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
+/* 韓国語の節は和文フォントのハングルにならないよう、韓国語のフォントを先に置く。分かち書きの空白で折り返す */
+:lang(ko) {
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  word-break: keep-all;
+}
 .wrap {
   max-width: 840px;
   margin: 0 auto;
